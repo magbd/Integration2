@@ -1,0 +1,199 @@
+/*Fonts :
+- titre: "Terminal Dosis", font-size 52px / 28px pour les titres
+- Voici le lien vers la Google font
+<link rel='stylesheet' id='google-webfonts-css'  href='http://fonts.googleapis.com/css?family=Terminal+Dosis%3A200%2C400&#038;ver=4.2.2' type='text/css' media='all' />- 
+Toutes les autres "Helvetica Neue", 13px
+
+Couleurs :
+Gris foncé : #505050
+Gris clair : #606060
+Gris très clair : #A6A6A6*/
+/*#EDEBE8*/
+/*====================================================================*/
+
+body {
+	margin: 0 auto;
+	padding: 5% 0;
+	background-image: url("../images/bg.png");
+	font-family: "Helvetica";
+	font-size: 13px;
+	color: #505050;
+	/*padding-bottom: 5%;*/
+}
+
+.main {
+	width: 900px;
+	margin: 0 auto;
+	background-color: white;
+	box-shadow: 0px 2px 5px #505050;
+	padding: 50px 47px;
+	
+}
+
+/*HEADER ///////////////////////////*/
+
+header {
+	margin-bottom: 25px;
+}
+
+/*bandeau ===============================*/
+.bandeau {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+h1 {
+	font-family: "Terminal Dosis";
+	font-size: 52px;
+	margin: 0;
+	font-weight: normal;
+}
+
+.titre p {
+	margin: 10px 0 25px 0;
+}
+
+.search {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 34px;
+	height: 22px;
+	border-bottom: solid 1px #606060;
+	background-color: #EDEBE8;
+}
+
+a {
+	display: flex;
+	align-items: center;
+}
+
+.search img {
+	margin: 0;
+}
+
+/*barre nav =======================*/
+.menu {
+	display: flex;
+	background-color: #EDEBE8;
+	border-top: solid 1px #606060;
+	border-bottom: solid 1px #606060;
+}
+
+.menu ul {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin: auto;
+	padding: 0;
+	text-align: center;
+}
+
+.menu ul li {
+	list-style: none;
+	position: relative;
+	width: 150px;
+	line-height: 59px;
+	cursor: pointer;
+	
+}
+
+.menu ul li a {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	color: #505050;
+}
+
+.menu li:hover, .menu li a:hover {
+	color: #707298;
+}
+
+/*aspect sous-menu masqué*/
+.menu ul li ul {
+	display: none;
+	line-height: 33px;
+	width: 150px;
+	background-color: #EDEBE8;
+	border-top: solid 1px #606060;
+	border-bottom: solid 1px #606060;
+	position: absolute;
+	top: 59px;
+}
+
+.menu ul li:hover ul.sous_menu {
+	display: block;
+}
+
+
+/*/////////////////////////////////*/
+
+img {
+	width: 100%;
+	margin-bottom: 38px;
+}
+
+h2 {
+	margin: 0;
+	text-align: center;
+	font-size: 28px;
+	font-weight: normal;
+}
+
+.subtitle {
+	text-align: center;
+	color: #A6A6A6;
+	margin: 22px 0 0 0;
+}
+
+.contenu p {
+	margin: 30px 0;
+}
+
+/*/////////////////////////////*/
+.separation {
+	height: 40px;
+	background-color: #EDEBE8;
+	border-top: solid 1px #606060;
+	border-bottom: solid 1px #606060;
+}
+/*/////////////////////////////*/
+footer {
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+.chapeau {
+	height: 75px;
+	text-align: center;
+}
+
+.colonnes {
+	display: flex;
+	flex-direction: row;
+	height: 235px;
+	background-color: #EDEBE8;
+	border-top: solid 1px #606060;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+	align-content: stretch;
+	width: 25%;
+	height: 235px;
+	padding-left: 2%;
+}
+
+.col h3 {
+	margin: 10% 0 ;
+}
+
+.col p {
+	margin: 0;
+	line-height: 1.3em;
+}
